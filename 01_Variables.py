@@ -16,14 +16,15 @@ print(my_float)
 my_boolean = True
 print(my_boolean)
 
-#type
-print(type(my_string))
-print(type(my_int))
-print(type(my_float))
-print(type(my_boolean))
-
-#tranformacion de variables a cadena de texto
+#concatenacion de variables
 print(my_string, my_int, my_float, my_boolean);
+
+#type
+print(type(my_string)) # tipo 'str'
+print(type(my_int)) # tipo 'int'
+print(type(my_float)) # tipo 'float'
+print(type(my_boolean)) # tipo 'bool'
+print(type(print(my_string, my_int, my_float, my_boolean))) # tipo 'NoneType'
 
 #str 
 my_int_to_string = str(my_int)
