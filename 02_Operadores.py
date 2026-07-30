@@ -40,9 +40,9 @@ print("aaaa" >= "abaa") # Operaciones alfabeticas
 print(len("aaaa") >= len("abaa")) # Cuenta caracteres y compara
 
 ### Operadores Logicos ###
-print(3 > 4 and "Hola" > "Mundo")
-print(3 > 4 or "Hola" > "Mundo")
-print(3 < 4 and "Hola" < "Mundo")
-print(3 < 4 or "Hola" > "Mundo")
-print(3 < 4 or ("Hola" > "Mundo" and 4 == 4))
-print(not(3>4))
+print(3 > 4 and "Hola" > "Mundo") # False and False = False
+print(3 > 4 or "Hola" > "Mundo") # False or False = False
+print(3 < 4 and "Hola" < "Mundo") # True and True = True
+print(3 < 4 or "Hola" > "Mundo") # True or False = True
+print(3 < 4 or ("Hola" > "Mundo" and 4 == 4)) # True or (False and True) = True
+print(not(3>4)) # True
