@@ -37,3 +37,40 @@ print(name)
 print(height)
 print(age)
 print(surname)
+
+print(my_list + my_other_list) # Concatenacion de listas
+
+my_other_list.append("Agente-707") # Inserta un nuevo elemento al final de la lista
+print(my_other_list)
+
+my_other_list.insert(1, "Verde") # Inserta un nuevo valor en la posicion que se le indica
+print(my_other_list)
+
+my_other_list.remove("Verde") # Borra un elemento de la lista
+print(my_other_list)
+
+print(my_list.pop()) # Extrae el ultimo elemento de la lista por defecto
+print(my_list)
+
+print(my_list.pop(2)) # Extrae el elemento de la posicion 2 de la lista
+print(my_list)
+
+my_pop_element = my_list.pop(2) # Recupera el elemento eliminado
+print(my_pop_element)
+
+print(my_list)
+del my_list[2] # Elimina el elemento de la posicion 2 de la lista
+print(my_list)
+
+my_new_list = my_list.copy() # Copia los elementos de "my_list" a "my_new_list"
+
+my_list.clear() # Elimina todos los elementos de la lista
+print(my_list)
+print(my_new_list)
+
+my_new_list.reverse() # Invierte el orden de los elementos
+print(my_new_list)
+
+my_new_list.sort() # Ordena los elementos de la lista de menor a mayor
+print(my_new_list)
+
