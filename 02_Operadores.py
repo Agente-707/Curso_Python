@@ -11,16 +11,17 @@ print(2**3) # Potencia
 # Concatenación de cadenas
 print("Hola" + " Mundo") 
 print("Tengo " + str(19) + " años")
+print("Tengo", 19, "años") # Otra forma de concatenar cadenas
 
 # Repetición de cadenas
-print("Hola " * 5) 
-print("Hola " * (2**3))
+print("Hola " * 5) # => Hola Hola Hola Hola Hola - 5 veces
+print("Hola " * (2**3)) # => Hola Hola Hola Hola Hola Hola Hola Hola - 8 veces
 
 my_float = 2.5 * 2
-print("Hola " * int(my_float)) 
+# print("Hola " * my_float) Error: no se puede multiplicar una cadena por un float => xxx Hola * 5.0 xxx
+print("Hola " * int(my_float)) # Transforma el float a int
 
 ### Operadores Comparativos ###
-
 print(3 > 4)
 print(3 < 4)
 print(3 >= 4)
@@ -35,8 +36,8 @@ print("Hola" <= "Mundo")
 print("Hola" == "Mundo")
 print("Hola" != "Mundo")
 
-
-print("aaaa" >= "abaa") # Operaciones alfabeticas
+# Operaciones alfabeticas
+print("aaaa" >= "abaa") 
 print(len("aaaa") >= len("abaa")) # Cuenta caracteres y compara
 
 ### Operadores Logicos ###
