@@ -16,7 +16,8 @@ comillas simples
 
 ### Hola Mundo en Python ###
 print("Hola Mundo") #comillas dobles
-
 print('Hola Mundo') #comillas simples
 
-# "print" Imprime el mensaje dentro de los parentesis
+# "print()" Imprime el mensaje dentro de los parentesis
+print("Buenos dias, buenas tardes, buenas noches")
+print("5 + 5 =", 5 + 5) # Suma de numeros
