@@ -16,6 +16,11 @@ print(my_float)
 my_boolean = True
 print(my_boolean)
 
+'''
+Nota: En python no existe el tipo de dato 'char',
+ni el tipo de dato 'double', ni el tipo de dato 'long'.
+'''
+
 # concatenacion de variables
 print(my_string, my_int, my_float, my_boolean);
 print("Este es el valor de:", my_int)
@@ -28,21 +33,24 @@ print(type(my_boolean)) # tipo 'bool'
 print(type(print(my_string, my_int, my_float, my_boolean))) # tipo 'NoneType'
 
 # str 
-my_int_to_string = str(my_int)
+my_int_to_string = str(my_int) # Transforma un int a str
 print(type(my_int_to_string))
-my_float_to_string = str(my_float)
+my_float_to_string = str(my_float) # Transforma un float a str
 print(type(my_float_to_string))
 
 # Algunas Funciones
 print(len(my_string))
+print(len(my_int_to_string))
+print(len(my_float_to_string))
+# 'len' cuenta la cantidad de caracter de un string
 
 # Variables en una sola linea
 nombre, apellido, alias, edad = "Luis", "Pareja", "Agente-707", 19
 print("Me llamo", nombre, apellido, "mi edad es", edad, ". Y mi alias es ", alias)
 
 # inputs
-name = input("Cual es tu nombre?: ")
-age = input("Cuantos años tienes?: ")
+name = input("Cual es tu nombre?: ") # Pide al usuario que ingrese su nombre
+age = input("Cuantos años tienes?: ") # Pide al usuario que ingrese su edad
 print(name)
 print(age)
 
