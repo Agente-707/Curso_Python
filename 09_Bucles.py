@@ -27,6 +27,28 @@ else: # Podemos combinar else con el while, pero no con elif
 
 print("La ejecución continúa")
 
+# Condicional if dentro de while
+while my_condition < 20:
+    my_condition += 1 # my_condition ira aumentando de uno en uno
+    if my_condition === 15: # Cuando my_condition sea 15 imprimira el mensaje 
+        print("Mi condición es 15")
+    print(my_condition)
+
+# break
+my_condition = 10
+
+while my_condition < 20:
+    my_condition += 1
+    print(my_condition)
+    if my_condition == 15:
+        print("mi condición es 15, el bucle terminó")
+        break; # El break rompe con el bucle sin importar la condición principal de este
+
+# for
+my_list = [12, 23, 11, 46, 18]
+
+for element in my_list:
+    print(element)
 
 
 
