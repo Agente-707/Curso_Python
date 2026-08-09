@@ -51,8 +51,7 @@ my_list = [12, 23, 11, 46, 18]
 for element in my_list: # el for va a repetir tantas veces como elementos tengamos en nuestra lista
     print(element) # en cada vuelta va a acceder a cada valor de la lista en orden
 
-# el for funciona con cualquier tipo de estructura de elementos
-
+# el 'for' funciona con cualquier tipo de estructura de elementos
 # tupla
 my_tuple = (19, 1.75, "Luis", "Pareja")
 for element in my_tuple: 
@@ -66,7 +65,7 @@ for element in my_set:
 # diccionario
 my_dict = {"Name":"Luis", "Surname":"Pareja", "Age":19, 10:"hola"} 
 for element in my_dict: 
-    print(element) # imprime las llaves no los valores
+    print(element) # imprime solo las llaves, no los valores
 
 # else en el bucle for
 for element in my_list:
@@ -74,10 +73,20 @@ for element in my_list:
 else: # cuando el bucle for termine, imprimira el mensje
     print("mi bulce for a terminado")
 
+# break en bucle for
 for element in my_list:
     print(element)
-    if element == 11:
-        break  # El break tambien corta con el bucle for
+    if element == 11: # si se cumple la condicion
+        break  # El 'break' corta con el bucle for (sale del bucle)
     print("Se ejecuta")
 else:
     print("El bucle for a terminado")    
+
+# continue
+for element in my_list:
+    print(element)
+    if element == 11: # si se cumple la condicion
+        continue  # El 'continue' ignora las instrucciones de abajo y continua con el bucle for
+    print("Se ejecuta")
+else:
+    print("El bucle for a terminado")
