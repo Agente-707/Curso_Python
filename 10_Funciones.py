@@ -12,10 +12,19 @@ my_function () # => Llamamos a la función
 def suma (first_number, second_number): # Función 'suma' con dos parametros 
     print(first_number + second_number) # Imprime la suma de los dos parametros
 
-suma(3,7) # Cuando llamamos a la función tenemos que pasarle dos valores para los dos parametros
+# Cuando llamamos a la función tenemos que pasarle dos valores para los dos parametros
+suma(3,7) # => fist_number = 3 + second_number = 7
 suma(2.5,10)
 suma(3.5,3.5)
 suma("Hola", " mundo") # Concatenación de strings
+
+def resta (first_number, second_number):
+    print(fist_numer - second_number)
+
+print(10,4)
+print(2,19)
+print(2.3,10)
+#print("hola","mundo") Error: Los strings no se pueden restar
 
 # Asignando tipo de variable para los parametros
 def suma (first_number: int, second_number: int): # first_number: int => primer número entero
@@ -61,7 +70,8 @@ print_name(surname="Pareja", name="Luis") # Podemos especificar el orden de llam
 Podemos asignar valores a los parametros por defecto
 sin tener que especificarlo cuando llamemos a la función.
 '''
-def print_name_with_default (name, surname, alias = "Sin alias") # Asignamos por defecto el valor de 'alias'
+def print_name_with_default (name, surname, alias = "Sin alias"): # Asignamos por defecto el valor de 'alias'
     print(f"{name} {surname} {alias}")
 
 print("Luis","Pareja") # El valor de alias, por defecto, es "Sin alias" por lo que no hace falta pasarle el valor
+
