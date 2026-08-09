@@ -19,7 +19,7 @@ suma(3.5,3.5)
 suma("Hola", " mundo") # Concatenación de strings
 
 def resta (first_number, second_number):
-    print(fist_numer - second_number)
+    print(fist_number - second_number)
 
 print(10,4)
 print(2,19)
@@ -74,4 +74,24 @@ def print_name_with_default (name, surname, alias = "Sin alias"): # Asignamos po
     print(f"{name} {surname} {alias}")
 
 print("Luis","Pareja") # El valor de alias, por defecto, es "Sin alias" por lo que no hace falta pasarle el valor
+
+# Parametros dinamicos
+# A un parametro con * podemos pasarle varios parametros en la llamada 
+def print_texts(*text): # Solo tiene un parametro *text
+    print(text)
+
+print_text("hola","adios","buenas noches","buenos días") # Le pasamos más parametros
+# Imprime ('hola', 'adios', 'buenas noches', 'buenos dias')
+
+def print_texts(*text):
+    for text in texts:
+        print(text)
+        
+print_text("Hola","adios","buenas noches","buenos días")
+# Imprime:
+# hola
+# adios
+# buenos noches
+# buenos días
+
 
