@@ -2,6 +2,7 @@
 
 
 # Clase vacía
+
 class MyEmptyPerson: # Primera letra del nombre de una clase en mayusculas (Camel Case)
     pass # => No hace nada
 
@@ -10,6 +11,7 @@ print(MyEmptyPerson())
 
 
 # Clase con parametros 'name' y 'surname'
+
 class Person:
     def __init__(self, name, surname): # => Constructor de clase
         self.name = name         # Atributo 'name'
@@ -33,6 +35,7 @@ print(my_person.surname)  # => Pareja
 
 
 # Clase sin parametros
+
 class MyOtherPerson:
     def __init__(self): # No le pasamos parametros
 
@@ -48,6 +51,7 @@ print(my_person.surname)  # => Pareja
 
 
 # Clase con atributo almacenado
+
 class Person2:
     def __init__(self, name, surname): # Clase con dos parametros 'name' y 'surname'
         self.full_name = f"{name} {surname}" # Atributo almacenado 'full_name' trabaja con los dos parametros
@@ -59,6 +63,7 @@ print(my_person.full_name) #  => "Luis Pareja"
 
 
 # Clase con función
+
 class Person3:
     # Constructor
     def __init__(self, name, surname): 
@@ -105,4 +110,59 @@ print(my_other_person.full_name)
 Nota: 
 Podemos acceder a los atributos de una 
 clase y modificarlos sin problemas
+'''
+
+
+# Clases con atributos privados
+class Person5:
+    def __init__(self, name, surname, alias = "Agente-707"):
+        self.full_name = f"{name} {surname} ({alias})"
+        self.__name = name         # Atributo privado '__name'
+        self.__surname = surname   # Atributo privado '__surname' 
+
+    '''
+    Nota:
+    Cuando a un atributo lo ponemos en
+    privado ya no podemos acceder a ellos
+    directamente al llamarlos.
+    
+    Para poder acceder a estos atributos
+    necesitamos un método que nos sirva 
+    para obtener los valores de estos 
+    atributos.
+
+    A estos métodos se les conoce como 
+    'getters'
+    '''
+
+    # Definimos las funciones get
+    def get_name(self):
+        return self.__name # La función 'get_name' nos retorna el valor de '__name'
+
+    def get_surname(self):
+        return self.__surname # La función 'get_surname' nos retorna el valor de '__surname'
+
+
+    def walk (self):
+        print(f"{self.full_name} está caminando")
+
+my_person = Person5("Luis", "Pareja") # Definimos la clase
+print(my_person.full_name) # Atributo full_name no es privado => "Luis Pareja (Agente-707)"
+
+# print(my_person.__name); => Error: No podemos acceder a los atributos privados de una clase
+
+print(my_person.get_name()) #  Accedemos al atributo privado '__name' => "Luis"
+print(my_person.get_surname()) #  Accedemos al atributo privado '__surname' => "Pareja"
+
+'''
+Nota:
+Podemos acceder a los atributos
+privados con los 'getters', pero 
+no podemos acceder a ellos para
+modificarlos.
+
+Para ello necesitariamos crear otros
+métodos que nos permitan hacerlo, a
+estas funciones se les conoce como
+'setters'.
 '''
