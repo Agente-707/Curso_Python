@@ -32,10 +32,10 @@ controlar errores es usando
 
 # Controlando errores con 'try except'
 try:
-    print(numberOne + numberTwo) # Si se produce un error se salta al bloque de 'except'
-    print("No se ha producido un error") # Si no hay error el mensaje se ejecuta y se salta el bloque de except
+    print(numberOne + numberTwo) 
+    print("No se ha producido un error.") # Si no hay error el mensaje se ejecuta y el bloque de 'except' se omite
 except:
-    print("Se ha producido un error")
+    print("Se ha producido un error.") # El mensaje se ejecuta si se produce un error en 'try'
 # => Se ha producido un error
 
 '''
@@ -46,3 +46,13 @@ nuestro programa no se cierra
 
 
 # try except else
+try:
+    print(numberOne + numberTwo)
+    print("No se ha producido un error.")
+except:
+    print("Se ha producido un error.") # Si se produce un error este mensaje se ejecuta
+else:
+    print("La ejeción continúa correctamente.") # El mensaje se ejecuta si no se produce una excepción
+
+
+# try except else finally
