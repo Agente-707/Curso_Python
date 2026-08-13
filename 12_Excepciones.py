@@ -16,6 +16,7 @@ usando condicionales
 '''
 
 # Controlando error con condicionales
+
 if type(numberTwo) == int: # type(numberTwo) = str => No se cumple
     print(numberOne + numberTwo) # No se ejecuta el error
 else:
@@ -30,7 +31,8 @@ controlar errores es usando
 'try' y 'except'
 '''
 
-# Controlando errores con 'try except'
+# try except
+
 try:
     print(numberOne + numberTwo) 
     print("No se ha producido un error.") # Si no hay error el mensaje se ejecuta y el bloque de 'except' se omite
@@ -46,13 +48,58 @@ nuestro programa no se cierra
 
 
 # try except else
+
 try:
-    print(numberOne + numberTwo)
-    print("No se ha producido un error.")
+    print(numberOne + numberTwo) # => Error
+    print("No se ha producido un error.") 
 except:
     print("Se ha producido un error.") # Si se produce un error este mensaje se ejecuta
 else:
     print("La ejeción continúa correctamente.") # El mensaje se ejecuta si no se produce una excepción
+# => "Se ha producido un error"
+
+numberTwo = 1 
+
+try:
+    print(numberOne + numberTwo) # => Válido
+    print("No se ha producido un error.") 
+except:
+    print("Se ha producido un error.") # Si se produce un error este mensaje se ejecuta
+else:
+    print("La ejeción continúa correctamente.") # El mensaje se ejecuta si no se produce una excepción
+# => 3
+# => "No se ha producido un error."
+# => "La ejeción continúa correctamente."
 
 
 # try except else finally
+
+try:
+    print(numberOne + numberTwo) # => Válido
+    print("No se ha producido un error.") 
+except:
+    print("Se ha producido un error.") # Si se produce un error este mensaje se ejecuta
+else:
+    print("La ejeción continúa correctamente.") # El mensaje se ejecuta si no se produce una excepción
+finally:
+    print("La ejecución continúa") # El mensaje siempre se ejecuta
+# => 3
+# => "No se ha producido un error."
+# => "La ejeción continúa correctamente."
+# => "La ejecución continúa"
+
+numberTwo = "1"
+
+try:
+    print(numberOne + numberTwo) # => Error
+    print("No se ha producido un error.") 
+except:
+    print("Se ha producido un error.") # Si se produce un error este mensaje se ejecuta
+else:
+    print("La ejeción continúa correctamente.") # El mensaje se ejecuta si no se produce una excepción
+finally:
+    print("La ejecución continúa") # El mensaje siempre se ejecuta
+# => "Se ha producido un error."
+# => "La ejecución continúa"
+
+
