@@ -111,13 +111,25 @@ pero no 'try' ni 'except'
 '''
 
 
-# Escepciones por tipo
+# Excepciones por tipo
 
 # print(numberOne + numberTwo) => No salta un error 'TypeError'
 try:
     print(numberOne + numberTwo) 
     print("No se ha producido un error.") # Si no hay error el mensaje se ejecuta y el bloque de 'except' se omite
 except TypeError:
-    print("Se ha producido un error.") # El mensaje se ejecuta si se produce un error de tipo 'TypeError'
+    print("Se ha producido un TypeError") # El mensaje se ejecuta si se produce un error de tipo 'TypeError'
+except ValueError:
+    print("Se ha producido un ValueError") # El mensaje se ejecuta si se produce un error de tipo 'ValueError'
 
+
+# Captura de la información de la excepción
+
+try:
+    print(numberOne + numberTwo)
+    print("No se ha producido un error.")
+except ValueError as ERROR: # => Nombre de la variable que guarda el error "ERROR"
+    print(ERROR) # Imprime la informacion del error 
+except Exception as my_random_error_name:
+    print(my_random_error_name) # Imprime la excepción generica capturada
 
