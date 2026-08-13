@@ -111,3 +111,13 @@ pero no 'try' ni 'except'
 '''
 
 
+# Escepciones por tipo
+
+# print(numberOne + numberTwo) => No salta un error 'TypeError'
+try:
+    print(numberOne + numberTwo) 
+    print("No se ha producido un error.") # Si no hay error el mensaje se ejecuta y el bloque de 'except' se omite
+except TypeError:
+    print("Se ha producido un error.") # El mensaje se ejecuta si se produce un error de tipo 'TypeError'
+
+
