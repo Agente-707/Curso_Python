@@ -102,4 +102,12 @@ finally:
 # => "Se ha producido un error."
 # => "La ejecución continúa"
 
+'''
+Nota:
+Dentro de esta estructura
+'try - except - else - finally'
+podemos omitir 'else' o 'finally'
+pero no 'try' ni 'except'
+'''
+
 
