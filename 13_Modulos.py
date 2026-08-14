@@ -24,12 +24,13 @@ printValue("Hola python!")
 
 # Módulos del sistema de Python
 
+# Módulo math
 import math
 
 ''' 
-'math' es un módulo nos da el acceso a
-diversas notaciones y operaciones
-matemáticas
+'math' es un módulo que nos da el 
+acceso a diversas notaciones y 
+operaciones matemáticas
 '''
 
 print(math.pi) # valor de pi
@@ -41,3 +42,13 @@ from math import pi as PI_VALUE # Renombramos pi a 'PI_VALUE'
 
 print(PI_VALUE)
 
+# Módulo random
+import random
+'''
+'random' es un módulo que nos da 
+acceso a diversos recursos para
+realizar elecciones aleatorias
+'''
+
+print(random.choices("Agente-707")) # => Me devuelve una letra aleatoria del string
+print(random.randrange(2,7)) # Me devuelve un número aleatorio dentro del rango de 2 a 7
