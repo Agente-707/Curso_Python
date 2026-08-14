@@ -1,10 +1,18 @@
 ### Modulos ###
 
+'''
+Con los módulos podemos llamar
+directamente a cualquier función
+que creemos en otro archivo 
+'''
+
+# Formas de llamar a una función de un módulo
 
 import my_module # Importamos nuestro modulo 'my_module'
 
 my_module.sumValue(5, 3, 1) # Llamo a la función 'suma' del archivo 'my_module.py'
 my_module.printValue("Hola Python!") # Llamo a la función 'printValue' del archivo 'my_module.py'
+
 
 # Otra forma
 from my_module import sumValue, printValue
